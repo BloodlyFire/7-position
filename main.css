@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: rgb(191, 192, 192);
+    background-color: #ccc;
     font-family: sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -34,32 +34,72 @@ body{
 .main p{
     margin-bottom: 20px;
 }
+
 .imgNew{
     position: absolute;
     left: 0;
     top: 0;
-    /* transform: rotate(180deg); */
+    /* right: 0;
+    bottom: 0;
+    transform: rotate(180deg); */
 }
+
 .header{
     position: relative;
     left: 15px;
     top: -20px;
 }
+
 .imgButton{
     position: absolute;
     left: 50%;
     top: -14px;
     transform: translateX(-50%);
-    z-index: 7;
+    z-index: 15;
 }
-.imgTel {
+
+.imgTel{
     position: fixed;
-    left: 5px;
+    left: 0;
     top: 30%;
 }
-.bird{
+
+.imgBird{
     position: absolute;
-left: 40%;
-top: -25px;
-z-index: 5;
+    left: 40%;
+    top: -45px;
+    z-index: 14;
+}
+
+.nav{
+    background-color: #ccccccb4;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    background-color: #fff;
+    margin: 15px;
+    padding: 10px 20px;
+    border-radius: 20px 0 0 0;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover{
+    color: #633939;
+    border-radius: 0 0 25px 0;
 }
